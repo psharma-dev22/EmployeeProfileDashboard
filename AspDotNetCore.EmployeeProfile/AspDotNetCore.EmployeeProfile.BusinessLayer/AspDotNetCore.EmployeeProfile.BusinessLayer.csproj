@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.7.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.8.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspDotNetCore.EmployeeProfile.DAL\AspDotNetCore.EmployeeProfile.DAL.csproj" />
+    <ProjectReference Include="..\AspDotNetCore.EmployeeProfile.DTO\AspDotNetCore.EmployeeProfile.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

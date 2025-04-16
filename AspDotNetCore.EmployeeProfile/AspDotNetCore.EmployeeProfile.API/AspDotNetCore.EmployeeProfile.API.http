@@ -1,0 +1,6 @@
+@AspDotNetCore.EmployeeProfile.API_HostAddress = http://localhost:5288
+
+GET {{AspDotNetCore.EmployeeProfile.API_HostAddress}}/EmployeeProfile/
+Accept: application/json
+
+###

@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AspDotNetCore.EmployeeProfile/.vs/AspDotNetCore.EmployeeProfile/DesignTimeBuild
+/AspDotNetCore.EmployeeProfile/.vs/AspDotNetCore.EmployeeProfile/FileContentIndex
+/AspDotNetCore.EmployeeProfile/.vs/AspDotNetCore.EmployeeProfile/v17
+/AspDotNetCore.EmployeeProfile/.vs/AspDotNetCore.EmployeeProfile/config
+/AspDotNetCore.EmployeeProfile/.vs/AspDotNetCore.EmployeeProfile.API/DesignTimeBuild
+/AspDotNetCore.EmployeeProfile/.vs/AspDotNetCore.EmployeeProfile.API/FileContentIndex
+/AspDotNetCore.EmployeeProfile/.vs/ProjectEvaluation
+/AspDotNetCore.EmployeeProfile/AspDotNetCore.EmployeeProfile.API/bin/Debug
+/AspDotNetCore.EmployeeProfile/AspDotNetCore.EmployeeProfile.API/obj/Debug
+/AspDotNetCore.EmployeeProfile/AspDotNetCore.EmployeeProfile.API/obj
+/AspDotNetCore.EmployeeProfile/AspDotNetCore.EmployeeProfile.BusinessLayer/bin/Debug
+/AspDotNetCore.EmployeeProfile/AspDotNetCore.EmployeeProfile.BusinessLayer/obj
+/AspDotNetCore.EmployeeProfile/AspDotNetCore.EmployeeProfile.DAL/bin/Debug
+/AspDotNetCore.EmployeeProfile/AspDotNetCore.EmployeeProfile.DAL/obj
+/AspDotNetCore.EmployeeProfile/AspDotNetCore.EmployeeProfile.DTO/bin/Debug
+/AspDotNetCore.EmployeeProfile/AspDotNetCore.EmployeeProfile.DTO/obj
