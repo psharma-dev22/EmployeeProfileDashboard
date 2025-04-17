@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using AspDotNetCore.EmployeeProfile.BusinessLayer.Services.IServices;
 using AspDotNetCore.EmployeeProfile.BusinessLayer.Utilities.CustomException;
 using AspDotNetCore.EmployeeProfile.DAL.Entities;
+using AspDotNetCore.EmployeeProfile.DAL.Repositories;
 using AspDotNetCore.EmployeeProfile.DAL.Repositories.IRepositories;
 using AspDotNetCore.EmployeeProfile.DTO.DTO;
 using AutoMapper;
@@ -24,6 +25,17 @@ namespace AspDotNetCore.EmployeeProfile.BusinessLayer.Services
         { 
             _employeeRepository = employeeRepository;
             _mapper = mapper;
+        }
+        public async Task<EmployeeDTO> GetAsync(int employeeId)
+        {
+            var employee = await _employeeRepository.GetAsync(e => e.EmployeeId== employeeId);
+
+            if (employee == null)
+            {
+                throw new UserNotFoundException();
+            }
+
+            return _mapper.Map<EmployeeDTO>(employee);
         }
         public async Task<EmployeeDTO> AddEmployeeAsync(EmployeeToAddDTO employeeToAddDTO)
         {

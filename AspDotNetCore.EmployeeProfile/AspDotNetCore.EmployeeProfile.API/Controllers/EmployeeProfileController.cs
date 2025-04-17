@@ -23,6 +23,18 @@ namespace AspDotNetCore.EmployeeProfile.API.Controllers
         {
             _employeeService = employeeService;
         }
+        [HttpGet("getemployee")]
+        public async Task<IActionResult> GetEmployee(int employeeId)
+        {
+            try
+            {
+                return Ok(await _employeeService.GetAsync(employeeId));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Bad Request " + ex);
+            }
+        }
         [HttpGet("getemployees")]
         public async Task<IActionResult> GetEmployees()
         {

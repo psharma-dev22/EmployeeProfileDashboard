@@ -10,6 +10,7 @@ namespace AspDotNetCore.EmployeeProfile.BusinessLayer.Services.IServices
 {
     public interface IEmployeeService
     {
+        Task<EmployeeDTO> GetAsync(int employeeId);
         Task<List<EmployeeDTO>> GetListAsync(CancellationToken cancellationToken = default);
         Task<EmployeeDTO> AddEmployeeAsync(EmployeeToAddDTO employeeToAddDTO);
         Task<EmployeeDTO> UpdateEmployeeAsync(EmployeeToUpdateDTO employeeToUpdateDTO);
