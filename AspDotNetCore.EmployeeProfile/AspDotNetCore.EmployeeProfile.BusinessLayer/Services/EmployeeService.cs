@@ -89,7 +89,8 @@ namespace AspDotNetCore.EmployeeProfile.BusinessLayer.Services
             {
                 list = new List<EmployeeToAddDTO>();
                 var table = dataSet.Tables[0];
-                foreach (DataRow row in table.Rows)
+                var rows = table.AsEnumerable().Skip(1);
+                foreach (DataRow row in rows)
                 {
                     var employeeToAddDTO = new EmployeeToAddDTO()
                     {

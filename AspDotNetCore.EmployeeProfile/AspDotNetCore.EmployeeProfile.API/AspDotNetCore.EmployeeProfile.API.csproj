@@ -21,4 +21,8 @@
     <ProjectReference Include="..\AspDotNetCore.EmployeeProfile.BusinessLayer\AspDotNetCore.EmployeeProfile.BusinessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UploadedFiles\" />
+  </ItemGroup>
+
 </Project>
