@@ -94,11 +94,11 @@ namespace AspDotNetCore.EmployeeProfile.BusinessLayer.Services
                 {
                     var employeeToAddDTO = new EmployeeToAddDTO()
                     {
-                        EmployeeName = row["Column1"].ToString(),
-                        DOB = DateOnly.ParseExact(row["Column2"].ToString(), "dd/mm/yyyy", CultureInfo.InvariantCulture),
-                        Gender = row["Column3"].ToString(),
-                        Email = row["Column4"].ToString(),
-                        State = row["Column5"].ToString(),
+                        EmployeeName = row["Column0"].ToString(),
+                        DOB = DateOnly.ParseExact(row["Column1"].ToString(), "dd/mm/yyyy", CultureInfo.InvariantCulture),
+                        Gender = row["Column2"].ToString(),
+                        Email = row["Column3"].ToString(),
+                        State = row["Column4"].ToString(),
                     };
                     list.Add(employeeToAddDTO);
                 }

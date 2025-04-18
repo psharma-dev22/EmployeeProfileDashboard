@@ -26,6 +26,9 @@ namespace AspDotNetCore.EmployeeProfile.API.Controllers.V2
                 //check if file is empty
                 if (file == null || file.Length <= 0) return BadRequest("No file uploaded");
 
+                var extension = Path.GetExtension(file.FileName).ToLowerInvariant();
+                if (!extension.Equals(".xlsx"))
+                    return BadRequest("Unsupported file type.");
 
                 //creating file and writing in it
                 var filePath = Path.Combine(Directory.GetCurrentDirectory(), "UploadedFiles", file.FileName);
